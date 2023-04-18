@@ -2,17 +2,20 @@
 
 namespace App\Entity;
 
+use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Metadata\ApiResource;
 
 /**
- * User
+ * Ticket
  *
- * @ORM\Table(name="user")
+ * @ORM\Table(name="User")
  * @ORM\Entity
  */
 /**
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
  */
+#[ApiResource]
 class User
 {
     /**
